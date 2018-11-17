@@ -1,5 +1,5 @@
 package amadeusFunctions.Exceptions;
 
-public class nonAlphanumericalException extends Exception{
+public class nonAlphanumericalException extends Exception {
 }
 

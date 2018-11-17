@@ -18,7 +18,7 @@ public class weatherFunction extends function {
     //effects: retrieves the data from the Dark Sky weather api as a raw JSON file from vancouver geocoordinates
     public String getWeatherLocal() throws ForecastException {
         this.request = new ForecastRequestBuilder()
-                .key(new APIKey(""))
+                .key(new APIKey("9e12884a3b0e04ec4b2b3e6b8dbf7762"))
                 .location(new GeoCoordinates(new Longitude(-123.1207), new Latitude(49.2827)))
                 .language(ForecastRequestBuilder.Language.en)
                 .build();
