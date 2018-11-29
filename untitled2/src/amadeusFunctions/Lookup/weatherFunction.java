@@ -10,15 +10,17 @@ import java.util.List;
 
 public class weatherFunction extends function {
     public ForecastRequest request;
+    private String key;
 
     public weatherFunction() {
         ForecastRequest request;
+        key = "9e12884a3b0e04ec4b2b3e6b8dbf7762";
     }
     //requires: connection to internet
     //effects: retrieves the data from the Dark Sky weather api as a raw JSON file from vancouver geocoordinates
     public String getWeatherLocal() throws ForecastException {
         this.request = new ForecastRequestBuilder()
-                .key(new APIKey("9e12884a3b0e04ec4b2b3e6b8dbf7762"))
+                .key(new APIKey(key))
                 .location(new GeoCoordinates(new Longitude(-123.1207), new Latitude(49.2827)))
                 .language(ForecastRequestBuilder.Language.en)
                 .build();
@@ -31,7 +33,7 @@ public class weatherFunction extends function {
     //and language
     public String getWeatherLocations(double longitude, double latitude) throws ForecastException {
         this.request = new ForecastRequestBuilder()
-                .key(new APIKey("9e12884a3b0e04ec4b2b3e6b8dbf7762"))
+                .key(new APIKey(key))
                 .location(new GeoCoordinates(new Longitude(longitude), new Latitude(latitude)))
                 .language(ForecastRequestBuilder.Language.en)
                 .build();

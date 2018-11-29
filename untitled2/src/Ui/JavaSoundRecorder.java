@@ -3,29 +3,16 @@ package Ui;
 import javax.sound.sampled.*;
 import java.io.*;
 
-/**
- * A sample program is to demonstrate how to record sound in Java
- * author: www.codejava.net
- */
 public class JavaSoundRecorder {
     // record duration, in milliseconds
-    static final long RECORD_TIME = 10000;  // 1 minute
-
-    // path of the wav file
-    File wavFile = new File("RecordAudio.wav");
-
-    // format of audio file
+    static final long RECORD_TIME = 10000; //10 seconds
+    File wavFile = new File("RecordAudio.flac");
     AudioFileFormat.Type fileType = AudioFileFormat.Type.WAVE;
-
-    // the line from which audio data is captured
     TargetDataLine line;
 
-    /**
-     * Defines an audio format
-     */
     AudioFormat getAudioFormat() {
         float sampleRate = 16000;
-        int sampleSizeInBits = 8;
+        int sampleSizeInBits = 16;
         int channels = 2;
         boolean signed = true;
         boolean bigEndian = true;
@@ -34,10 +21,7 @@ public class JavaSoundRecorder {
         return format;
     }
 
-    /**
-     * Captures the sound and record into a WAV file
-     */
-    void start() {
+    public void start() {
         try {
             AudioFormat format = getAudioFormat();
             DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
@@ -67,18 +51,12 @@ public class JavaSoundRecorder {
         }
     }
 
-    /**
-     * Closes the target data line to finish capturing and recording
-     */
-    void finish() {
+    public void finish() {
         line.stop();
         line.close();
         System.out.println("Finished");
     }
 
-    /**
-     * Entry to run the program
-     */
     public static void main(String[] args) {
         final JavaSoundRecorder recorder = new JavaSoundRecorder();
 
@@ -94,10 +72,8 @@ public class JavaSoundRecorder {
                 recorder.finish();
             }
         });
-
         stopper.start();
 
-        // start recording
         recorder.start();
     }
 }

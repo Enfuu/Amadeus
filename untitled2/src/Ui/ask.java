@@ -4,12 +4,36 @@ import amadeusFunctions.Exceptions.nonAlphanumericalException;
 import amadeusFunctions.Lookup.weatherFunction;
 import amadeusFunctions.Lookup.wikiSearch;
 import tk.plogitech.darksky.forecast.ForecastException;
-
 import java.io.IOException;
 
 import static com.sun.corba.se.impl.util.Utility.printStackTrace;
 
 public class ask {
+
+    public static void transcribedata() throws Exception {
+    }
+
+
+    public static void record10sAudio() {
+        final JavaSoundRecorder recorder = new JavaSoundRecorder();
+
+        // creates a new thread that waits for a specified
+        // of time before stopping
+        Thread stopper = new Thread(new Runnable() {
+            public void run() {
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                recorder.finish();
+            }
+        });
+        stopper.start();
+
+        recorder.start();
+    }
+
 
     public static class LookUp {
         public String topic;
@@ -27,7 +51,7 @@ public class ask {
         //effects: Determines the function to run, if the function is a wiki, and exception is thrown that corrects the non-alphanumerical
         //topic should you have entered one
         public void lookUpFunct() throws IOException, nonAlphanumericalException {
-            if (function == "Wiki"){
+            if (function == "Wiki") {
                 wikiSearch wiki = new wikiSearch();
                 try {
                     //tries to topic
@@ -45,8 +69,7 @@ public class ask {
                     wiki.parseWikiJson(wiki.aquireJsonfromWeb(this.topic.replaceAll("[\\W]|_", "")));
                 }
 
-            }
-            else if (function == "Weather"){
+            } else if (function == "Weather") {
                 weatherFunction weather = new weatherFunction();
                 try {
                     weather.callClass();
@@ -54,14 +77,10 @@ public class ask {
                 } catch (ForecastException e) {
                     e.printStackTrace();
                 }
-            }
-            else {
+            } else {
                 System.out.println("No function specified");
             }
         }
     }
-
-    public class UserFunctions {
-    }
-
 }
+
