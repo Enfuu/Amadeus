@@ -6,7 +6,7 @@ import java.io.*;
 public class JavaSoundRecorder {
     // record duration, in milliseconds
     static final long RECORD_TIME = 10000; //10 seconds
-    File wavFile = new File("RecordAudio.flac");
+    File wavFile = new File("RecordAudio.wav");
     AudioFileFormat.Type fileType = AudioFileFormat.Type.WAVE;
     TargetDataLine line;
 

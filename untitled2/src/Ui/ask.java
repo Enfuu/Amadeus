@@ -3,7 +3,14 @@ package Ui;
 import amadeusFunctions.Exceptions.nonAlphanumericalException;
 import amadeusFunctions.Lookup.weatherFunction;
 import amadeusFunctions.Lookup.wikiSearch;
+import com.ibm.watson.developer_cloud.http.HttpMediaType;
+import com.ibm.watson.developer_cloud.service.security.IamOptions;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.model.RecognizeOptions;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechRecognitionResults;
 import tk.plogitech.darksky.forecast.ForecastException;
+
+import java.io.File;
 import java.io.IOException;
 
 import static com.sun.corba.se.impl.util.Utility.printStackTrace;
@@ -11,6 +18,22 @@ import static com.sun.corba.se.impl.util.Utility.printStackTrace;
 public class ask {
 
     public static void transcribedata() throws Exception {
+        IamOptions options = new IamOptions.Builder()
+                .apiKey("aGUZ4JpGbf7WNYnmcIh4YiVqjFleXafwwDdbmCqqtAif") //Requires API key here from IBM Watson
+                .build();
+
+        SpeechToText speechToText = new SpeechToText(options);
+        speechToText.setEndPoint("https://gateway-wdc.watsonplatform.net/speech-to-text/api");
+
+        File audio = new File("RecordAudio.wav");
+
+        RecognizeOptions roptions = new RecognizeOptions.Builder()
+                .audio(audio)
+                .contentType(HttpMediaType.AUDIO_WAV)
+                .build();
+
+        SpeechRecognitionResults transcript = speechToText.recognize(roptions).execute();
+        System.out.println(transcript);
     }
 
 
@@ -22,7 +45,7 @@ public class ask {
         Thread stopper = new Thread(new Runnable() {
             public void run() {
                 try {
-                    Thread.sleep(10000);
+                    Thread.sleep(5000);
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }
@@ -64,7 +87,7 @@ public class ask {
                     wiki.parseWikiJson(wiki.aquireJsonfromWeb(this.topic.replaceAll("[\\W]|_", "")));
                 } catch (nonAlphanumericalException e) {
                     //replaces the non-alphanumerical characters with ""
-                    System.out.println("You used a non-alphanumeric character");
+                    System.out.println("You used a non-alphanumeric character or a space");
                     printStackTrace();
                     wiki.parseWikiJson(wiki.aquireJsonfromWeb(this.topic.replaceAll("[\\W]|_", "")));
                 }

@@ -14,8 +14,9 @@ public class weatherFunction extends function {
 
     public weatherFunction() {
         ForecastRequest request;
-        key = "9e12884a3b0e04ec4b2b3e6b8dbf7762";
+        key = "9e12884a3b0e04ec4b2b3e6b8dbf7762"; //Requires Darksky API key here
     }
+
     //requires: connection to internet
     //effects: retrieves the data from the Dark Sky weather api as a raw JSON file from vancouver geocoordinates
     public String getWeatherLocal() throws ForecastException {
@@ -42,6 +43,7 @@ public class weatherFunction extends function {
         return forecast;
     }
 
+    //effects: filters the forecast json so that we isolate the timezone, summary data and temperature
     public String filterForecast(String forecast){
         List<String> extracteddata = new ArrayList<>();
         String parts[] = forecast.split(",");

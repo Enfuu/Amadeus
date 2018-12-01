@@ -12,9 +12,9 @@ import java.io.IOException;
 
 public class main {
     public static void main(String[] args) throws Exception {
-        ask.transcribedata();
 //        ask.record10sAudio();
-        ask.LookUp lookUp = new ask.LookUp("Communism", "Wiki");
+//        ask.transcribedata();
+        ask.LookUp lookUp = new ask.LookUp("Lightning Thief", "Wiki");
         lookUp.lookUpFunct();
     }
 }

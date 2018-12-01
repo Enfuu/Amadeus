@@ -60,7 +60,8 @@ public class wikiSearch extends function {
         Root root = new Gson().fromJson(json, Root.class);
         for (Page page : root.query.pages.values()) {
             System.out.println(page.title);
-            System.out.println("  " + page.extract);
+            System.out.println("  " + page.extract.substring(0, page.extract.indexOf(".")+1));
+
         }
     }
 

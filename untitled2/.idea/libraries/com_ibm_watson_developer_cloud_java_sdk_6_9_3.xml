@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="com.ibm.watson.developer_cloud:java-sdk:6.9.3" type="repository">
+    <properties maven-id="com.ibm.watson.developer_cloud:java-sdk:6.9.3" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/java-sdk-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/assistant-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/conversation-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/core-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okio-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logging-interceptor-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-urlconnection-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jersey-jsr166e-2.25.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/discovery-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/language-translator-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/natural-language-classifier-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/natural-language-understanding-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/personality-insights-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/speech-to-text-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/text-to-speech-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tone-analyzer-6.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/visual-recognition-6.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
