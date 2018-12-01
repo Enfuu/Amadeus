@@ -19,7 +19,7 @@ public class ask {
 
     public static void transcribedata() throws Exception {
         IamOptions options = new IamOptions.Builder()
-                .apiKey("aGUZ4JpGbf7WNYnmcIh4YiVqjFleXafwwDdbmCqqtAif") //Requires API key here from IBM Watson
+                .apiKey("<Key Here>") //Requires API key here from IBM Watson
                 .build();
 
         SpeechToText speechToText = new SpeechToText(options);
