@@ -3,6 +3,15 @@ A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, Goog
 
 So far only the wikipedia and the weather methods are functional. For weather you will require a Dark Sky API key and for Voice recognition you will reqiure a IBM Watson Speech-To-Text API
 
+# Commands
+Currently Amadeus only supports the following commands 
+
+```
+"Who is <Name>"
+"What is <Thing>"
+"What is the Weather?"
+```
+
 # License
 ```{
 MIT License
