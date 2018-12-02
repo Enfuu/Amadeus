@@ -13,7 +13,7 @@ Currently Amadeus only supports the following commands
 "Whats your birthday?"
 "Who is | Tell me about | Whose <Name>?"
 "What is | Tell me about <Thing>?"
-"What is the Weather?"
+"What is | what's the Weather?"
 ```
 
 # License
