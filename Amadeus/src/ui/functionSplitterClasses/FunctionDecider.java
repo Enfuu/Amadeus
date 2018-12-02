@@ -15,7 +15,13 @@ public class FunctionDecider {
         String result = null;
 
         //These are words that classify the String as a function that searches for weather
-        if (input.toLowerCase().contains("weather") && (input.toLowerCase().contains("what") || (input.toLowerCase().contains("whats")))){
+        if (input.toLowerCase().contains("when is your birthday") || input.toLowerCase().contains("when were you")) {
+            result = "September 16 2018";
+        }
+        else if (input.toLowerCase().contains("what is your name")) {
+            result = "My name is Amadeus";
+        }
+        else if (input.toLowerCase().contains("weather") && (input.toLowerCase().contains("what") || (input.toLowerCase().contains("whats")))){
             result = new Ask.lookUp("","Weather").lookUpFunct();
         }
         //These are words that classify the String as a function that searches on wikipedia
@@ -30,6 +36,13 @@ public class FunctionDecider {
             topic = topic.replaceAll("Who is","").trim();
             result = new Ask.lookUp(topic,"Wiki").lookUpFunct();
         }
+        else if (input.toLowerCase().contains("how are you")){
+            result = "I'm good, thank you for asking";
+        }
+        else if (input.toLowerCase().contains("who made you")){
+            result = "Lian Duan, in his second year of University at UBC";
+        }
+
         else {
             //Error: when you ask it something that doesn't make sense
             result = "I'm sorry, I don't understand";
