@@ -1,11 +1,9 @@
-package Ui;
+package amadeusFunctions.audioClasses;
 
 import javax.sound.sampled.*;
 import java.io.*;
 
 public class JavaSoundRecorder {
-    // record duration, in milliseconds
-    static final long RECORD_TIME = 10000; //10 seconds
     File wavFile = new File("RecordAudio.wav");
     AudioFileFormat.Type fileType = AudioFileFormat.Type.WAVE;
     TargetDataLine line;
@@ -55,5 +53,24 @@ public class JavaSoundRecorder {
         line.stop();
         line.close();
         System.out.println("Finished");
+    }
+    public static void record10sAudio() {
+        final JavaSoundRecorder recorder = new JavaSoundRecorder();
+
+        // creates a new thread that waits for a specified
+        // of time before stopping
+        Thread stopper = new Thread(new Runnable() {
+            public void run() {
+                try {
+                    Thread.sleep(4000);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                recorder.finish();
+            }
+        });
+        stopper.start();
+
+        recorder.start();
     }
 }

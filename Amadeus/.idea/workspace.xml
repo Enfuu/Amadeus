@@ -59,37 +59,107 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="675">
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/main.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/function.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ui/ask.java">
+      <file leaf-file-name="Ask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/functionSplitterClasses/Ask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="69" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaSoundRecorder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ui/JavaSoundRecorder.java">
+      <file leaf-file-name="SchedulerFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/userFunctions/SchedulerFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Speak.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ui/Speak.java">
+      <file leaf-file-name="FunctionDecider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/functionSplitterClasses/FunctionDecider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transcription.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/audioClasses/Transcription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaSoundRecorder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/audioClasses/JavaSoundRecorder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeatherFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/lookUp/WeatherFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WikiSearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/lookUp/WikiSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nonAlphanumericalException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/exceptions/nonAlphanumericalException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -134,10 +204,24 @@
         <option value="$PROJECT_DIR$/src/voicetest.java" />
         <option value="$PROJECT_DIR$/src/recognizer/GSpeechResponseListener.java" />
         <option value="$PROJECT_DIR$/src/amadeusFunctions/Lookup/wikiSearch.java" />
-        <option value="$PROJECT_DIR$/src/amadeusFunctions/main.java" />
         <option value="$PROJECT_DIR$/src/amadeusFunctions/Lookup/weatherFunction.java" />
-        <option value="$PROJECT_DIR$/src/Ui/ask.java" />
         <option value="$PROJECT_DIR$/src/Ui/JavaSoundRecorder.java" />
+        <option value="$PROJECT_DIR$/src/Ui/Transcription.java" />
+        <option value="$PROJECT_DIR$/src/Ui/ask.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/audioClasses/Speak.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/main.java" />
+        <option value="$PROJECT_DIR$/src/Ui/main.java" />
+        <option value="$PROJECT_DIR$/src/ui/FunctionDecider.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/lookUp/wikiSearch.java" />
+        <option value="$PROJECT_DIR$/src/ui/functionSplitterClasses/ask.java" />
+        <option value="$PROJECT_DIR$/src/ui/functionSplitterClasses/functionDecider.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/audioClasses/JavaSoundRecorder.java" />
+        <option value="$PROJECT_DIR$/src/ui/functionSplitterClasses/FunctionDecider.java" />
+        <option value="$PROJECT_DIR$/src/ui/functionSplitterClasses/Ask.java" />
+        <option value="$PROJECT_DIR$/src/ui/main.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/lookUp/WikiSearch.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/lookUp/WeatherFunction.java" />
+        <option value="$PROJECT_DIR$/src/amadeusFunctions/audioClasses/Transcription.java" />
       </list>
     </option>
   </component>
@@ -166,8 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -180,17 +264,6 @@
             <path>
               <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
               <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -204,20 +277,41 @@
               <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="amadeusFunctions" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="audioClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
               <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="amadeusFunctions" type="462c0819:PsiDirectoryNode" />
-              <item name="Lookup" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
               <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+              <item name="amadeusFunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="lookUp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="amadeusFunctions" type="462c0819:PsiDirectoryNode" />
+              <item name="userFunctions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amadeus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amadeus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="functionSplitterClasses" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,11 +375,11 @@
     <configuration name="JavaSoundRecorder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Ui.*" />
+          <option name="PATTERN" value="amadeusFunctions.audioClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Ui.JavaSoundRecorder" />
+      <option name="MAIN_CLASS_NAME" value="amadeusFunctions.audioClasses.JavaSoundRecorder" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -294,7 +388,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled2" />
+      <module name="Amadeus" />
       <envs />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
@@ -335,11 +429,11 @@
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="amadeusFunctions.*" />
+          <option name="PATTERN" value="ui.functionSplitterClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="amadeusFunctions.main" />
+      <option name="MAIN_CLASS_NAME" value="ui.main" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -474,7 +568,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -500,6 +593,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -515,7 +609,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/functionSplitterClasses/FunctionDecider.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -524,8 +626,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/Lookup/wikiSearch.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/Lookup/weatherFunction.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java" />
@@ -541,7 +641,6 @@
     <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/JSONparse.java" />
     <entry file="file://$PROJECT_DIR$/src/Ui/LookUp.java" />
     <entry file="file://$PROJECT_DIR$/src/Ui/UserFunctions.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/UserFunction/schedulerFunction.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36448">
@@ -549,8 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/UserFunction/spotifyFunction.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/Exceptions/nonAlphanumericalException.java" />
     <entry file="file://$PROJECT_DIR$/src/voicetest.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java" />
@@ -573,46 +670,103 @@
     <entry file="file://$PROJECT_DIR$/recognizer/RecognizerChunked.java" />
     <entry file="file://$PROJECT_DIR$/recognizer/GSpeechResponseListener.java" />
     <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/Lookup/stackOverflowFunct.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/Lookup/wikiSearch.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/function.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/Lookup/weatherFunction.java" />
-    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Ui/audioParse.java" />
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/userFunctions/spotifyFunction.java" />
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/audioClasses/Speak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/exceptions/nonAlphanumericalException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/audioClasses/JavaSoundRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/function.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ui/audioParse.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/functionSplitterClasses/FunctionDecider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/userFunctions/SchedulerFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ui/Speak.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/lookUp/WikiSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/lookUp/WeatherFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ui/ask.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/functionSplitterClasses/Ask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ui/JavaSoundRecorder.java">
+    <entry file="file://$PROJECT_DIR$/src/amadeusFunctions/audioClasses/Transcription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

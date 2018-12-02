@@ -1,6 +1,6 @@
-package amadeusFunctions.Lookup;
+package amadeusFunctions.lookUp;
 
-import amadeusFunctions.Exceptions.nonAlphanumericalException;
+import amadeusFunctions.exceptions.nonAlphanumericalException;
 import amadeusFunctions.function;
 import com.google.gson.Gson;
 
@@ -11,7 +11,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-public class wikiSearch extends function {
+public class WikiSearch extends function {
+    /**
+     * Code made by Lian-D 2018 for Amadeus-Voice-Assistant
+     * This class handles the wikipedia search using the REST api provided by wikimedia,
+     *
+     * */
 
     public class Root {
         String batchcomplete;
@@ -55,14 +60,16 @@ public class wikiSearch extends function {
         return sb.toString();
     }
 
-    public void parseWikiJson(String jsonfile){
+    public String parseWikiJson(String jsonfile){
         String json = jsonfile;
+        String returnedExtract = null;
         Root root = new Gson().fromJson(json, Root.class);
         for (Page page : root.query.pages.values()) {
             System.out.println(page.title);
-            System.out.println("  " + page.extract.substring(0, page.extract.indexOf(".")+1));
+            returnedExtract = page.extract.substring(0, page.extract.indexOf(".")+1);
 
         }
+        return returnedExtract;
     }
 
 }

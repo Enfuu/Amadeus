@@ -1,4 +1,4 @@
-package amadeusFunctions.Exceptions;
+package amadeusFunctions.exceptions;
 
 public class nonAlphanumericalException extends Exception {
 }

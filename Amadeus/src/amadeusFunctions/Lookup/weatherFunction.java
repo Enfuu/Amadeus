@@ -1,4 +1,4 @@
-package amadeusFunctions.Lookup;
+package amadeusFunctions.lookUp;
 
 import amadeusFunctions.function;
 import tk.plogitech.darksky.forecast.*;
@@ -8,13 +8,19 @@ import tk.plogitech.darksky.forecast.model.Longitude;
 import java.util.ArrayList;;
 import java.util.List;
 
-public class weatherFunction extends function {
+public class WeatherFunction extends function {
+    /**
+     * Code made by Lian-D 2018 for Amadeus-Voice-Assistant
+     * This class handles the weather search using the api provided by DarkSky
+     *
+     * */
+
     public ForecastRequest request;
     private String key;
 
-    public weatherFunction() {
+    public WeatherFunction() {
         ForecastRequest request;
-        key = "<keyhere>"; //Requires Darksky API key here
+        key = "<API key>"; //Requires Darksky API key here
     }
 
     //requires: connection to internet
