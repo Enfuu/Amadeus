@@ -11,9 +11,9 @@ Currently Amadeus only supports the following commands
 "Who made you?"
 "How Are You?"
 "Whats your birthday?"
-"Who is | Tell me about | Whose <Name>?"
-"What is | Tell me about <Thing>?"
-"What is | what's the Weather?"
+"[Who is | Tell me about | Whose] <Name>?"
+"[What is | Tell me about] <Thing>?"
+"[What is | what's] the Weather?"
 ```
 
 # License
