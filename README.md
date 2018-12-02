@@ -7,8 +7,12 @@ So far only the wikipedia and the weather methods are functional. For weather yo
 Currently Amadeus only supports the following commands 
 
 ```
-"(Who is | Tell me about | Whose) <Name>"
-"(What is | Tell me about) <Thing>"
+"Whats your name?"
+"Who made you?"
+"How Are You?"
+"Whats your birthday?"
+"Who is | Tell me about | Whose <Name>?"
+"What is | Tell me about <Thing>?"
 "What is the Weather?"
 ```
 
