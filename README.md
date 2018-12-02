@@ -1,5 +1,5 @@
 # Amadeus
-A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, Google Cloud Speech to Text and Youtube API.
+A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, IBM Watson Speech-To-Text and Youtube API.
 
 So far only the wikipedia and the weather methods are functional. For weather you will require a Dark Sky API key and for Voice recognition you will reqiure a IBM Watson Speech-To-Text API
 
