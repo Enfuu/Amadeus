@@ -1,6 +1,8 @@
 # Amadeus
 A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, IBM Watson Speech-To-Text, IBM Watson Text-To-Speech and Youtube API.
 
+You have to make the build yourself because API keys are required
+
 # Commands
 Currently Amadeus only supports the following commands 
 
