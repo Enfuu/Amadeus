@@ -1,10 +1,6 @@
 # Amadeus
 A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, IBM Watson Speech-To-Text and Youtube API.
 
-# Required API keys
-- Dark Sky Weather API
-- IBM Watson Speech-To-Text API
-
 # Commands
 Currently Amadeus only supports the following commands 
 
@@ -18,6 +14,14 @@ Currently Amadeus only supports the following commands
 - "**What is | Tell me about** < Thing >?" 
 - "**What is | what's** the Weather?"
 
+# Required API keys
+- Dark Sky Weather API
+- IBM Watson Speech-To-Text API
+
+# Libaries Used
+- Google gson 
+- IBM Watson SDK
+- Darksky API wrapper
 
 # License
 ```{
