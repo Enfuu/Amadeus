@@ -11,6 +11,8 @@ Currently Amadeus only supports the following commands
 - "Whats your name?"
 - "Who made you?"
 - "How Are You?"
+- "What is the time?"
+- "What is the date?"
 - "Whats your birthday?"
 - "**Who is | Tell me about | Whose** < Name >?" 
 - "**What is | Tell me about** < Thing >?" 
