@@ -1,5 +1,5 @@
 # Amadeus
-A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, IBM Watson Speech-To-Text and Youtube API.
+A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia, IBM Watson Speech-To-Text, IBM Watson Text-To-Speech and Youtube API.
 
 # Commands
 Currently Amadeus only supports the following commands 
