@@ -17,6 +17,7 @@ Currently Amadeus only supports the following commands
 # Required API keys
 - Dark Sky Weather API
 - IBM Watson Speech-To-Text API
+- IBM Watson Text-To-Speech API
 
 # Libaries Used
 - Google gson 
