@@ -1,6 +1,7 @@
 package ui.functionSplitterClasses;
 
 import amadeusFunctions.exceptions.nonAlphanumericalException;
+import amadeusFunctions.exceptions.nullDataException;
 import amadeusFunctions.lookUp.WeatherFunction;
 import amadeusFunctions.lookUp.WikiSearch;
 import tk.plogitech.darksky.forecast.ForecastException;
@@ -31,7 +32,7 @@ public class Ask {
         //modifies: This
         //effects: Determines the function to run, if the function is a wiki, and exception is thrown that corrects the non-alphanumerical
         //topic should you have entered one
-        public String lookUpFunct() throws IOException, nonAlphanumericalException {
+        public String lookUpFunct() throws IOException, nonAlphanumericalException, nullDataException {
             String functionResult = null;
             if (function == "Wiki") {
                 WikiSearch wiki = new WikiSearch();
@@ -47,7 +48,8 @@ public class Ask {
                     //replaces the non-alphanumerical characters with ""
                     System.out.println("You used a non-alphanumeric character or a space");
                     printStackTrace();
-                    functionResult = wiki.parseWikiJson(wiki.aquireJsonfromWeb(this.topic.replaceAll("[\\W]|_", "")));
+                    String json = wiki.aquireJsonfromWeb(this.topic.replaceAll("[\\W]|_", ""));
+                    functionResult = wiki.parseWikiJson(json);
                 }
 
             } else if (function == "Weather") {

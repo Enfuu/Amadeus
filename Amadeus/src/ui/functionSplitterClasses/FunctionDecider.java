@@ -1,6 +1,7 @@
 package ui.functionSplitterClasses;
 
 import amadeusFunctions.exceptions.nonAlphanumericalException;
+import amadeusFunctions.exceptions.nullDataException;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -14,7 +15,7 @@ public class FunctionDecider {
  *@Author Lian Duan
  * */
 
-    public static String decideFunctionality(String input) throws IOException, nonAlphanumericalException {
+    public static String decideFunctionality(String input) throws IOException, nonAlphanumericalException, nullDataException {
         String result = null;
 
         //These are words that classify the String as a function that searches for weather
@@ -24,12 +25,12 @@ public class FunctionDecider {
         else if (input.toLowerCase().contains("what is the date")) {
             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
             Date date = new Date();
-            result = dateFormat.format(date);
+            result = "The date is:" +dateFormat.format(date);
         }
         else if (input.toLowerCase().contains("what is the time")) {
-            DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+            DateFormat dateFormat = new SimpleDateFormat("HH:mm:");
             Date date = new Date();
-            result = dateFormat.format(date);
+            result = "The time is:" +dateFormat.format(date);
         }
         else if (input.toLowerCase().contains("what is your name")) {
             result = "My name is Amadeus";
@@ -61,6 +62,6 @@ public class FunctionDecider {
             result = "I'm sorry, I don't understand";
         }
         //Returns the result drawn from the functions
-        return result;
+        return result.replaceAll("() ", ""); //safety measure because it breaks the TTS
     }
 }

@@ -1,6 +1,7 @@
 package amadeusFunctions.lookUp;
 
 import amadeusFunctions.exceptions.nonAlphanumericalException;
+import amadeusFunctions.exceptions.nullDataException;
 import amadeusFunctions.function;
 import com.google.gson.Gson;
 
@@ -34,7 +35,7 @@ public class WikiSearch extends function {
         String extract;
     }
 
-    public String aquireJsonfromWeb(String topic) throws MalformedURLException, IOException, nonAlphanumericalException {
+    public String aquireJsonfromWeb(String topic) throws MalformedURLException, IOException, nonAlphanumericalException{
         BufferedReader br = null;
         StringBuilder sb = new StringBuilder();;
 
@@ -43,7 +44,7 @@ public class WikiSearch extends function {
                 throw new nonAlphanumericalException();
             }
 
-            String theURL = "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch="+topic+"&gsrnamespace=0&gsrlimit=1&origin=*&prop=extracts&exchars=5000&exlimit=max&explaintext=1&exintro=1&format=json";
+            String theURL = "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch="+topic+"&gsrnamespace=0&gsrlimit=1&origin=*&prop=extracts&exchars=1200&exlimit=max&explaintext=1&exintro=1&format=json";
             URL url = new URL(theURL);
             br = new BufferedReader(new InputStreamReader(url.openStream()));
             String line;
@@ -57,10 +58,17 @@ public class WikiSearch extends function {
                 br.close();
             }
         }
-        return sb.toString();
+            return sb.toString();
     }
 
     public String parseWikiJson(String jsonfile){
+        if (jsonfile.toString().contains("{\"batchcomplete\":\"\",\"limits\":{\"extracts\":20}}")){
+            try {
+                throw new nullDataException();
+            } catch (nullDataException e) {
+                return "sorry, I don't know";
+            }
+        }
         String json = jsonfile;
         String returnedExtract = null;
         Root root = new Gson().fromJson(json, Root.class);
