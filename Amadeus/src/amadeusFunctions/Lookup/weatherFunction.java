@@ -20,7 +20,7 @@ public class WeatherFunction extends function {
 
     public WeatherFunction() {
         ForecastRequest request;
-        key = "9e12884a3b0e04ec4b2b3e6b8dbf7762"; //Requires Darksky API key here
+        key = "<API KEY>"; //Requires Darksky API key here
     }
 
     //requires: connection to internet
