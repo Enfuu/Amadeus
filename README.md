@@ -22,7 +22,7 @@ Currently Amadeus only supports the following commands, press the up arrow key t
 - Dark Sky Weather API
 - IBM Watson Speech-To-Text API
 
-# Libaries Used
+# Libraries Used
 - Google gson 
 - IBM Watson SDK
 - Darksky API wrapper
