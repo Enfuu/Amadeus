@@ -21,8 +21,6 @@ import java.util.ResourceBundle;
 public class Amadeus implements Initializable{
     @FXML
     private ImageView amadeus;
-    @FXML
-    private Label amadeusox;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -43,19 +41,16 @@ public class Amadeus implements Initializable{
         String search = Transcription.parseData();
         String result = (FunctionDecider.decideFunctionality(search));
         if (result.contains("Weather") ) {
-            amadeusox.setText(result);
             TextToSpeech tts = new TextToSpeech();;
             tts.speak(result, 0.2f, false, true);
             setAnswer();
         }
         else if (result.contains("date") || (result.contains("time"))) {
-            amadeusox.setText(result);
             TextToSpeech tts = new TextToSpeech();;
             tts.speak(result, 0.2f, false, true);
             setIdle();
         }
         else if (result.contains("error") || (result.contains("I don't understand"))) {
-            amadeusox.setText(result);
             TextToSpeech tts = new TextToSpeech();;
             tts.speak(result, 0.2f, false, true);
             setError();
