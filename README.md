@@ -1,5 +1,6 @@
 # Amadeus
 A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia and IBM Watson Speech-To-Text.
+Inspired by the Steins;gate 0 AI
 
 ![alt text](https://i.imgur.com/7bojSTa.png)
 
