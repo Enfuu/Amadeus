@@ -15,7 +15,7 @@ public class Transcription {
 
     private static String transcribedata() {
         IamOptions options = new IamOptions.Builder()
-                .apiKey("aGUZ4JpGbf7WNYnmcIh4YiVqjFleXafwwDdbmCqqtAif") //Requires API key here from IBM Watson
+                .apiKey("<API KEY>") //Requires API key here from IBM Watson
                 .build();
 
         SpeechToText speechToText = new SpeechToText(options);
