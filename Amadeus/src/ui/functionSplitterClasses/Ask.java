@@ -13,7 +13,7 @@ public class Ask {
     /**
      * Code made by Lian-D 2018 for Amadeus-Voice-Assistant
      * This class takes handles the execution of the functions, the object will be instantiated with the "Topic" and function. then run through lookUpFunct method.
-     *
+     *@Author Lian Duan
      * */
 
     public static class lookUp {

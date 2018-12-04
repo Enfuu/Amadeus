@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="marytts-builder-5.2-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/marytts-builder-5.2-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/marytts-lang-en-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/voice-cmu-slt-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/voice-cmu-rms-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/voice-dfki-poppy-hsmm-5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

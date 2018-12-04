@@ -12,7 +12,7 @@ public class WeatherFunction extends function {
     /**
      * Code made by Lian-D 2018 for Amadeus-Voice-Assistant
      * This class handles the weather search using the api provided by DarkSky
-     *
+     *@Author Lian Duan
      * */
 
     public ForecastRequest request;
@@ -20,7 +20,7 @@ public class WeatherFunction extends function {
 
     public WeatherFunction() {
         ForecastRequest request;
-        key = "<APIkey>"; //Requires Darksky API key here
+        key = "9e12884a3b0e04ec4b2b3e6b8dbf7762"; //Requires Darksky API key here
     }
 
     //requires: connection to internet

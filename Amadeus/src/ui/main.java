@@ -1,6 +1,7 @@
 package ui;
 
 import amadeusFunctions.audioClasses.JavaSoundRecorder;
+import amadeusFunctions.audioClasses.TextToSpeech;
 import amadeusFunctions.audioClasses.Transcription;
 import ui.functionSplitterClasses.FunctionDecider;
 
@@ -12,7 +13,9 @@ public class main {
     public static void main(String[] args) throws Exception {
         JavaSoundRecorder.record10sAudio();
         String search = Transcription.parseData();
-        System.out.println(FunctionDecider.decideFunctionality(search));
+        TextToSpeech tts = new TextToSpeech();
+        tts.speak((FunctionDecider.decideFunctionality(search)), 0.2f,false,true);
+
 
     }
 }

@@ -15,7 +15,7 @@ public class WikiSearch extends function {
     /**
      * Code made by Lian-D 2018 for Amadeus-Voice-Assistant
      * This class handles the wikipedia search using the REST api provided by wikimedia,
-     *
+     *@Author Lian Duan
      * */
 
     public class Root {
