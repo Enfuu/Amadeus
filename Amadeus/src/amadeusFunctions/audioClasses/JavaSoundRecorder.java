@@ -1,5 +1,8 @@
 package amadeusFunctions.audioClasses;
 
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
 import javax.sound.sampled.*;
 import java.io.*;
 
@@ -56,6 +59,7 @@ public class JavaSoundRecorder {
     }
     public static void record10sAudio() {
         final JavaSoundRecorder recorder = new JavaSoundRecorder();
+        recorder.playListening();
 
         // creates a new thread that waits for a specified
         // of time before stopping
@@ -72,5 +76,10 @@ public class JavaSoundRecorder {
         stopper.start();
 
         recorder.start();
+    }
+    public void playListening(){
+        Media sound=new Media(new File("resource/Listening.wav").toURI().toString());
+        MediaPlayer mediaPlayer=new MediaPlayer(sound);
+        mediaPlayer.play();
     }
 }

@@ -35,13 +35,17 @@ public class WikiSearch extends function {
         String extract;
     }
 
-    public String aquireJsonfromWeb(String topic) throws MalformedURLException, IOException, nonAlphanumericalException{
+    public String aquireJsonfromWeb(String topic) throws MalformedURLException, IOException{
         BufferedReader br = null;
         StringBuilder sb = new StringBuilder();;
 
         try {
             if (topic.matches("^.*[^a-zA-Z0-9].*$")){
-                throw new nonAlphanumericalException();
+                try {
+                    throw new nonAlphanumericalException();
+                } catch (nonAlphanumericalException e) {
+                    topic = topic.replaceAll("[\\W]|_", "");
+                }
             }
 
             String theURL = "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch="+topic+"&gsrnamespace=0&gsrlimit=1&origin=*&prop=extracts&exchars=1200&exlimit=max&explaintext=1&exintro=1&format=json";

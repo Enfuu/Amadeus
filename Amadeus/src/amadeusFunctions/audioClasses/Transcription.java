@@ -7,12 +7,13 @@ import com.ibm.watson.developer_cloud.speech_to_text.v1.model.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechRecognitionResults;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Transcription {
 
-    private static String transcribedata() throws Exception {
+    private static String transcribedata() {
         IamOptions options = new IamOptions.Builder()
                 .apiKey("aGUZ4JpGbf7WNYnmcIh4YiVqjFleXafwwDdbmCqqtAif") //Requires API key here from IBM Watson
                 .build();
@@ -22,16 +23,21 @@ public class Transcription {
 
         File audio = new File("RecordAudio.wav");
 
-        RecognizeOptions roptions = new RecognizeOptions.Builder()
-                .audio(audio)
-                .contentType(HttpMediaType.AUDIO_WAV)
-                .build();
+        RecognizeOptions roptions = null;
+        try {
+            roptions = new RecognizeOptions.Builder()
+                    .audio(audio)
+                    .contentType(HttpMediaType.AUDIO_WAV)
+                    .build();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         SpeechRecognitionResults transcript = speechToText.recognize(roptions).execute();
         return transcript.toString();
     }
 
-    public static String parseData() throws Exception {
+    public static String parseData() {
         String json = transcribedata();
         List<String> extracteddata = new ArrayList<>();
         String parts[] = json.split(",");

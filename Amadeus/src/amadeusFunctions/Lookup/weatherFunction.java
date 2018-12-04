@@ -25,14 +25,19 @@ public class WeatherFunction extends function {
 
     //requires: connection to internet
     //effects: retrieves the data from the Dark Sky weather api as a raw JSON file from vancouver geocoordinates
-    public String getWeatherLocal() throws ForecastException {
+    public String getWeatherLocal()  {
         this.request = new ForecastRequestBuilder()
                 .key(new APIKey(key))
                 .location(new GeoCoordinates(new Longitude(-123.1207), new Latitude(49.2827)))
                 .language(ForecastRequestBuilder.Language.en)
                 .build();
         DarkSkyClient client = new DarkSkyClient();
-        String forecast = client.forecastJsonString(request);
+        String forecast = null;
+        try {
+            forecast = client.forecastJsonString(request);
+        } catch (ForecastException e) {
+            return "An error has occured";
+        }
         return forecast;
     }
     //requires: connection to internet
